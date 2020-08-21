@@ -1,0 +1,90 @@
+/*
+.store-item-slider > .slider > ul {
+    border:1px solid blue;
+    width: calc(660px*6);
+    margin-left: auto;
+    margin-right: auto;
+}
+.store-item-slider > .slider > ul > li {
+    margin: 0 20px;
+    border:1px solid red;
+}
+.store-item-slider > .slider > ul > li > a > img {
+
+}
+.store-item-slider > .slider > ul > li > a > .text-box {
+    position: absolute;
+    top:30px;
+    left:30px;
+}
+.store-item-slider > .slider > ul > li > a > .text-box > .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+.store-item-slider > .slider > ul > li > a > .text-box > .sub-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.store-item-slider > .slider > ul > li > a > .text-box > .sub-title > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+*/
+.store-item-slider {
+    height: 620px;
+}
+.slider-2 {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+.backgorund {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 50%;
+    background-color: #f1f3f5;
+    z-index: 2;
+}
+.slick-track * {
+    width: 620px;
+    
+}
+.slick-track > .slick-slide {
+    width: 620px;
+    transform: translateX(50%);
+}
+.slick-track > .slick-slide  .text-box {
+    position: absolute;
+    top:30px;
+    left:30px;
+}
+.slick-track > .slick-slide {
+    margin: 0 20px;
+}
+.slick-track > .slick-slide .slick-current .slick-active{
+    width: 620px;
+}
+.slick-track > .slick-slide > div > .item {
+    margin: 0 20px;
+}
+.slick-track > .slick-slide > div > .item > a > .text-box > .sub-title > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.slick-track > .slick-slide > div > .item > a > .text-box > .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+.slick-track > .slick-slide > div > .item > a > .text-box > .sub-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 20px;
+}

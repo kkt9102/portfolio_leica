@@ -1,0 +1,106 @@
+/* bottom-site-map 커스텀 */
+.bottom-site-map {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    border-bottom:1px solid #555;
+  }
+  .bottom-site-map > nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 65%;
+  }
+  .bottom-site-map > nav > .box {
+    width: calc(100%/6);
+  }
+  .bottom-site-map > nav > .box >  ul > .title {
+    font-weight: 900;
+    padding-top:10px;
+    padding-bottom: 20px;
+  }
+  .bottom-site-map > nav > .box >  ul > li {
+      padding: 5px 0;
+  }
+  .border-red {
+    border:1px solid red;
+  }
+  .bottom-site-map > nav > .box >  .sns-menu > .facebook > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_facebook_wt_10x16.png);
+    width:10px;
+    height:16px;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .bottom-site-map > nav > .box >  .sns-menu > .instagram > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_instagram_wt_16x16.png);
+    width:16px;
+    height:16px;
+    margin-right: 9px;
+    display: inline-block;
+    transform: translateX(-3px) translateY(3px);
+  }
+.bottom-resister-a-product {
+    color:#fff;
+    background: #ed1c24;
+
+}
+.bottom-resister-a-product > div > .title {
+    font-size: 15px;
+    padding:80px 20px 20px 20px;
+}
+.bottom-resister-a-product > div > .link-text {
+    font-size: 21px;
+    font-weight: 800;
+    padding:0 20px 80px 20px;
+}
+.bottom-resister-a-product > div > .link-text > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_wt_22x16.png);
+    width: 22px;
+    height: 16px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+
+.bottom-site-map-1 {
+    background: #000;
+    font-size: 12px;
+}
+.bottom-site-map-1 > .con {
+  padding: 30px 0;
+}
+.bottom-site-map-1 > .con > .address {
+  width: 50%;
+  padding: 0 20px;
+}
+.bottom-site-map-1 > .con > .address > .text-box > span {
+  line-height: 1.9;
+}
+.bottom-site-map-1 > .con > .copyright {
+  width: 33%;
+  line-height: 3;
+}
+.bottom-site-map-1 .title {
+  color: #fff;
+}
+.bottom-site-map-1 .sub-title {
+  color: #555;
+}
+.bottom-site-map-1 .bottom-logo > a > .text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(-75%) translateX(10%);
+}
+.bottom-site-map-1 .bottom-logo > a > .logo {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/logo_leica_48x48.png);
+    width: 35px;
+    height: 35px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}

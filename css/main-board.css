@@ -1,0 +1,33 @@
+
+.main-board {
+    padding-bottom: 30px;
+}
+.main-board > nav > ul > li > a > .text-box {
+    color :#fff;
+    position: absolute;
+    bottom:20px;
+    left:40px;
+}
+.main-board > nav > ul > li > a > .text-box > .title {
+    font-size: 15px;
+    font-weight: bold;
+}
+.main-board > nav > ul > li > a > .text-box > .sub-title {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 600;
+}
+.main-board > nav > ul > li > a > .text-box > .sub-title > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.main-board > nav > ul > .leica-exhibition-board {
+    margin-right: 40px;
+}
+.main-board > nav > ul > .leica-item-board {
+    margin-bottom: 37px;
+}

@@ -1,0 +1,575 @@
+/* 폰트적용 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* 노말라이즈 */
+body, ul, li, h1 {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+label[for] {
+  cursor:pointer;
+  user-select:none;
+}
+
+/* 라이브러리 */
+.block {
+  display:block;
+}
+
+.inline-block {
+  display:inline-block;
+}
+
+.absolute-left {
+  position:absolute;
+  left:0;
+}
+
+.absolute-right {
+  position:absolute;
+  right:0;
+}
+
+.absolute-bottom {
+  position:absolute;
+  bottom:0;
+}
+
+.absolute-top {
+  position:absolute;
+  top:0;
+}
+
+.absolute-center {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.absolute-middle {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+
+.relative {
+  position:relative;
+}
+
+.fixed {
+  position:fixed;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+
+.cell-right {
+  float:right;
+  box-sizing:border-box;
+}
+
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.clear-both {
+  clear:both;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.margin-0-auto {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.text-align-center {
+  text-align:center;
+}
+
+.text-align-right {
+  text-align:right;
+}
+
+.line-height-0 {
+  line-height:0;
+}
+
+.line-height-0 > * {
+  line-height:normal;
+}
+
+.width-30px {
+  width:30px;
+}
+
+.width-35px {
+  width:35px;
+}
+
+.width-40px {
+  width:35px;
+}
+
+.width-45px {
+  width:35px;
+}
+
+.width-50px {
+  width:50px;
+}
+
+.width-80px {
+  width:80px;
+}
+
+.width-100px {
+  width:100px;
+}
+
+.width-100p {
+  width:100%;
+}
+
+.width-60p {
+  width:60%;
+}
+
+.width-55p {
+  width:55%;
+}
+
+.width-50p {
+  width:50%;
+}
+
+.width-45p {
+  width:45%;
+}
+
+.width-40p {
+  width:40%;
+}
+
+.width-30p {
+  width:30%;
+}
+
+.width-35p {
+  width:35%;
+}
+
+.width-100p-except-30px {
+  width:calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+  width:calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+  width:calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+  width:calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+  width:calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+  width:calc(100% - 100px);
+}
+
+.border-box {
+  box-sizing:border-box;
+}
+
+.font-size-dot-8rem {
+  font-size:.8rem;
+}
+
+.table-row {
+  display:table;
+}
+
+.table-row.row::after {
+  display:inline;
+  clear:non;
+}
+
+.table-row > .cell {
+  float:none;
+  display:table-cell;
+}
+
+.flex {
+  display:flex;
+}
+
+.flex > .cell {
+  float:none;
+}
+.ch-flex-1-0-auto > * {
+  flex:1 0 auto;
+}
+.justify-content-fe {
+  justify-content: flex-end;
+}
+.justify-content-fs {
+  justify-content: flex-start;
+}
+.justify-content-sa {
+  justify-content: space-around;
+}
+.justify-content-sb {
+  justify-content: space-between;
+}
+.align-self-center {
+  align-self:center;
+}
+.flex-wrap-no {
+  flex-wrap:nowrap;
+}
+.flex-wrap-wrap {
+  flex-wrap:wrap;
+}
+.flex-warp-warpre {
+  flex-wrap:wrap-reverse;
+}
+.align-items-center {
+    align-items: center;
+}
+* > .flex-1-0-0 {
+    flex:1 0 0;
+  }
+* > .flex-ai-c {
+    display:flex;
+    align-items:center;
+  }
+* > .flex-jc-c {
+  display:flex;
+  justify-content:center;
+}
+/* 커스텀 */
+.con-min-width {
+  min-width:1356px;
+}
+
+.con {
+  max-width:1280px;
+}
+.color-848484 {
+    color: #848484;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+.f1f3f5 {
+  background: #f1f3f5;
+}
+
+/* top-bar 커스텀 */
+.top-bar {
+    background-color: #000;
+}
+.top-bar-1 {
+    background: #151515;
+    border-bottom: 1px solid rgb(48,48,48);
+}
+body {
+  min-width: 1200px;
+}
+/* menu-box-1 커스텀 */
+.menu-box-1 > nav  {
+    width: 1200px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #848484;
+}
+.menu-box-1 > nav {
+    margin-left:32px;
+    margin-right: 47px;
+}
+.menu-box-1 > nav > .right {
+
+}
+.menu-box-1 > nav > .right > li:not(:last-child){
+  margin: 0 10px;
+}
+
+.menu-box-1 > nav > ul > li {
+  padding:12px 0;
+}
+.menu-box-1 > nav > .right > li:last-child {
+  padding: 0;
+}
+.menu-box-1 > nav > .right > .search {
+  font-size: 13px;
+}
+.menu-box-1 > nav > .right > .search > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_search_gr_12x12.png);
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    transform: translateY(20%);
+    margin-left: 5px;
+}
+.menu-box-1 > nav > .right > .language > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_kor_16x11.png);
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+    transform: translateY(5%);
+    margin-right: 5px;
+}
+.menu-box-1 > nav > .right> .login > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_account_gr_13x12.png);
+    width: 13px;
+    height: 12px;
+    display: inline-block;
+    transform: translateY(20%);
+    margin-right: 5px;
+}
+.menu-box-1 > nav > .right > .online-store {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.menu-box-1 > nav > .right > .online-store > a {
+    font-size: 13px;
+    font-weight: 400;
+    transform: scaleY(1.1);
+    transform-origin: 0 0;
+    background: #e30616;
+    color:#fff;
+    padding:6px 15px;
+    border-radius: 3px;
+}
+.menu-box-1 > nav > .right > .online-store > a > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_cart_wt_12x12.png);
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 8px;
+    transform: translateY(15%);
+}
+
+/* menu-box-2 커스텀 */
+.menu-box-2 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.menu-box-2 > ul > li:not(:first-child) > a {
+    white-space: nowrap;
+}
+.menu-box-2 > ul {
+    margin-left:32px;
+    margin-right: 47px;
+}
+.menu-box-2 > ul > li:first-child {
+  margin-right:45px;
+}
+.menu-box-2 > ul > li:nth-child(1n + 2) {
+  margin: 0 10px;
+}
+.menu-box-2 > ul > .logo {
+  padding:15px 0;
+}
+.menu-box-2 > ul > .logo > a {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/logo_leica_48x48.png);
+    width: 48px;
+    height: 48px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.menu-box-2 > ul > .cart > a {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/ico_cart_wt_18x18.png);
+    width: 18px;
+    height: 18px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.menu-box-2 > ul > .cart > a::after {
+  content: "0";
+  position: absolute;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 800;
+  top:-25%;
+  right:-75%;
+  color: #fff;
+  background: #e30616;
+  border-radius: 50%;
+}
+.menu-box-2 > ul > li:last-child {
+  padding:32px 0 28px 0;
+}
+.menu-box-2 > ul > li:not(:nth-child(6n + 1)) > a {
+  padding:32px 0 32px 0;
+  margin: -2px 0 2px 0;
+  transform: scaleY(1.1);
+  transform-origin: 0 0;
+}
+.menu-box-2 > ul > li > a:hover {
+  color:#e30616;
+}
+.top-bar-2 {
+  position: relative;
+}
+
+
+
+/* menu-item (2차 메뉴 아이템) 커스텀 */
+.menu-item  {
+  position: absolute;
+  z-index: 3;
+  left:0;
+  right:0;
+  background: #000;
+  border-top: 1px solid rgb(48,48,48);
+  height: 0;
+  font-size: 14px;
+  overflow: hidden;
+  transition: height .25s;
+  
+}
+.menu-item > ul {
+  width: 1000px;
+
+
+}
+.menu-item > ul > li {
+  margin: 0 20px 0 0;
+}
+.menu-item > ul > li > a {
+  padding: 25px 0;
+}
+
+.menu-box-2 > ul > li:hover > .menu-item {
+  height: 90%;
+}
+
+.main-banner {
+  margin-top: 40px;
+  margin-bottom:40px;
+  padding:0 40px;
+}
+.main-banner > div {
+  overflow: hidden;
+}
+.main-banner > div > img {
+  min-width: 1200px;
+}
+
+.main-banner > div > .sub-box > .text-box {
+  position: absolute;
+  z-index: 4;
+  top:35%;
+  color: #fff;
+  font-weight: bold;
+}
+.main-banner > div > .sub-box > .text-box > .item-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.main-banner > div > .sub-box > .text-box > .sub-title {
+  font-size: 24px;
+}
+.main-banner > div > .sub-box > .text-box > .sub-title > .icon {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+  width:22px;
+  height:16px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+
+
+/* leica-exhibition 커스텀 */
+.leica-exhibition-page {
+  margin-bottom: 130px;
+}
+.leica-exhibition-page > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.exhibition-main-photo > a {
+  color: #fff;
+}
+.exhibition-main-photo > a > img {
+  width: 100%;
+}
+
+.exhibition-main-photo > a > .text-box {
+  position: absolute;
+  bottom:40px;
+  left:40px;
+}
+.exhibition-main-photo > a > .text-box > .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.exhibition-main-photo > a > .text-box > .tr {
+  content: "";
+  background-color: #fff;
+  height: 3px;
+  width: 15%;
+  margin-bottom: 15px;
+}
+.exhibition-main-photo > a > .text-box > .exhibition-date {
+  font-size: 15px;
+}
+.exhibition-main-photo > a > .text-box > .exhibition-map {
+  font-size: 14px;
+}
+.exhibition-main-photo > a > .text-box > .title > .icon {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+  width:22px;
+  height:16px;
+  display: inline-block;
+  margin-left: 5px;
+}

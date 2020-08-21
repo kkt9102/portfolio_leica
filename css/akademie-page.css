@@ -1,0 +1,162 @@
+.akademie-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* akademie-schedule 커스텀 */
+.akademie-page > .akademie-schedule {
+    width: 60%;
+    margin-right: 40px;
+}
+.akademie-page img {
+    width: 100%;
+}
+.akademie-page > .akademie-schedule > h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.akademie-page > .akademie-schedule > ul > .this-month > a > .text-box {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+.akademie-page > .akademie-schedule> ul > .this-month > a > .text-box > .title-date {
+    position: absolute;
+    left:45px;
+    top:45%;
+}
+.akademie-page > .akademie-schedule> ul > .this-month > a > .text-box > .tr {
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    left:45px;
+    top:49%;
+}
+.akademie-page > .akademie-schedule> ul > .this-month > a > .text-box > .sub-title {
+    position: absolute;
+    left:45px;
+    top:52%;
+}
+.akademie-page > .akademie-schedule> ul > .this-month > a > .text-box > .title {
+    position: absolute;
+    bottom:35px;
+    left:45px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.akademie-page > .akademie-schedule> ul > .this-month > a > .text-box > .title > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* About 커스텀 */
+.akademie-page > .about {
+    width: calc(40% - 40px);
+    position: relative;
+}
+.akademie-page > .about > h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color:#e30616;
+    
+}
+.akademie-page > .about > h2 {
+
+}
+.akademie-page > .about > h2 > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.akademie-board {
+    border-top:3px solid #000;
+    border-bottom: 1px solid #000;
+    height: 766px;
+    overflow-Y: scroll;
+}
+.akademie-board > li {
+    
+}
+.akademie-board > li > .text {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 30px;
+    position: relative;
+    width: 40px;
+}
+.akademie-board > li > .text::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    position: absolute;
+    z-index: 3;
+    right:0;
+    top:0;
+    transform: translateY(50%) translateX(50%);
+}
+.akademie-board > li > a {
+    width:calc(100% - 40px);
+    padding:30px 0 30px 30px;
+    position: relative;
+    border-bottom:1px solid rgb(235,235,235);
+    border-left:1px solid rgb(235,235,235);
+}
+.akademie-board > li > a > div {
+    width: 50%;
+   }
+.akademie-board > li > a > .text-box {
+    display: inline-block;
+    width: 50%;
+}
+
+.akademie-board > li > a > .img > img {
+    width: 100%;
+}
+.akademie-board > li > a > .text-box > .title {
+    font-size: 18px;
+    font-weight: 800;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    line-height: 1.5;
+    letter-spacing: -.8px;
+
+}
+.akademie-board > li > a > .text-box > .title::after {
+    content: "";
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.akademie-board > li > a > .text-box > .title-date, .akademie-board > li > a > .text-box > .store-name {
+    font-size: 14px;
+    color: #848484;
+    position: absolute;
+}
+.akademie-board > li > a > .text-box > .title-date {
+    bottom: 55px;
+}
+.akademie-board > li > a > .text-box > .store-name {
+    bottom:35px;
+}
+.about > .view {
+    width: 455px;
+    overflow: hidden;;
+}
+.about > .view > .akademie-board {
+    width: 475px;
+}

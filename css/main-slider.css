@@ -1,0 +1,92 @@
+/*
+.main-sldier > .slider > ul > .item-1 .img {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/Top_main_pc.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.main-sldier > .slider > ul > .item-2 .img {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/img_slide_d_01_200527.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.main-sldier > .slider > ul > .item-3 .img {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/img_slide_d_02_200527.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.main-sldier > .slider > ul > .item-4 .img {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/img_slide_d_03_200527.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+*/
+
+.main-slider {
+    overflow-x: hidden;
+    
+}
+.main-slider > .slider > ul {
+    width: calc(100% * 4);
+    margin-left: 0;
+    transition: margin-left .4s;
+}
+.main-slider > .slider > ul > li {
+    width: calc(100% / 4);
+}
+
+.main-slider > .slider > ul > li > a > .img-box > .text-box {
+    position: absolute;
+    font-size: 30px;
+    color:#fff;
+    font-weight: 600;
+    left:18.5%;
+    top:61.5%;
+    z-index:3 ;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.slider > ul > li > a > .img-box > .text-box > .icon {
+    background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/leica/arr_right_rd_22x16.png);
+    width:22px;
+    height:16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.nav-text-box {
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    border-bottom:1px solid rgb(221,221,221);
+
+}
+.nav-text-box > div {
+    width: 20%;
+    position: relative;
+}
+.nav-text-box > div > .text-box {
+    cursor: pointer;
+    width: 80%;
+    height: 38px;
+    right: 0;
+    overflow: hidden;
+    word-break: keep-all;
+    margin-left: auto;
+    margin-right: auto;
+    padding:35px 0;
+}
+.nav-text-box > div:not(:last-child)::after  {
+    content:"";
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    width: 1px;
+    background-color: rgb(221,221,221);
+    height: 38px;
+}
+.nav-text-box > div:first-child {
+    margin-left: 10%;
+} 
+.nav-text-box > .nav-text.active {
+    color:#ed1c24;
+    border-bottom: 1px solid #ed1c24;
+}
