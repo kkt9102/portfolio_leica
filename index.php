@@ -23,6 +23,15 @@
 </head>
 
 <body>
+    <!-- 모작페이지 알람 -->
+    <div class="alerted active">
+        <div class="alert-box inline-block">이 페이지는 포트폴리오를 위한 페이지 입니다.
+            <div class="close-btn text-align-center">
+                <div class="close-text inline-block">확인</div>
+            </div>
+        </div>
+    </div>
+    <!-- 모작페이지 알람 끝 -->
     <!-- background #f1f3f5 영역 -->
     <section class="f1f3f5">
         <!-- top-bar HTML -->
@@ -435,7 +444,8 @@
                                     <div class="store-name">라이카 스토어 청담</div>
                                 </div>
                                 <div class="img cell">
-                                    <img src="https://kkt9102.github.io/img1/blog/article/portfolio/leica/list.jpg" alt="">
+                                    <img src="https://kkt9102.github.io/img1/blog/article/portfolio/leica/list.jpg"
+                                        alt="">
                                 </div>
                             </a>
                         </li>
@@ -485,7 +495,8 @@
                             <div class="text cell">May<br>10</div>
                             <a href="#" class="block row cell-right">
                                 <div class="text-box cell">
-                                    <div class="title">LEICA MASTER<br> CLASS<br>진동선 & 이갑철의 마스터 클래스<span class="icon"></span>
+                                    <div class="title">LEICA MASTER<br> CLASS<br>진동선 & 이갑철의 마스터 클래스<span
+                                            class="icon"></span>
                                     </div>
                                     <div class="title-date">2020.05.10</div>
                                     <div class="store-name">라이카 카메라 코리아 강의실</div>
@@ -544,7 +555,8 @@
                             <div class="text cell">Feb<br>02</div>
                             <a href="" class="block row cell-right">
                                 <div class="text-box cell">
-                                    <div class="title">라이카 Q & Q2 <br>사진 기초 이론 과 사용법 (2월)<span class="icon"></span></div>
+                                    <div class="title">라이카 Q & Q2 <br>사진 기초 이론 과 사용법 (2월)<span class="icon"></span>
+                                    </div>
                                     <div class="title-date">2020.02.02</div>
                                     <div class="store-name">라이카 플래그십 스토어 청담</div>
                                 </div>

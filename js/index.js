@@ -50,9 +50,14 @@ function item(){
     });
   }
 
-
+  function alerted(){
+	$('.alerted > .alert-box > .close-btn > .close-text').click(function(){
+		$('.alerted').removeClass('active');
+	})
+}
 
 $(function(){
     main_slide();
     item();
+    alerted();
 })
